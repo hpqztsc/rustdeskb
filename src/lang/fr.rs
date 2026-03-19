@@ -313,7 +313,7 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Set permanent password", "Définir le mot de passe permanent"),
         ("Enable remote restart", "Activer le redémarrage à distance"),
         ("Restart remote device", "Redémarrer l’appareil distant"),
-        ("Are you sure you want to restart", "Voulez-vous vraiment redémarrer l’appareil ?"),
+        ("Are you sure you want to restart", "Voulez-vous vraiment redémarrer"),
         ("Restarting remote device", "Redémarrage de l’appareil distant"),
         ("remote_restarting_tip", "L'appareil distant redémarre ; veuillez fermer cette boîte de dialogue et vous reconnecter en utilisant le mot de passe permanent dans quelques instants"),
         ("Copied", "Copié"),
@@ -377,8 +377,9 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("Keyboard Settings", "Paramètres du clavier"),
         ("Full Access", "Accès total"),
         ("Screen Share", "Partage d’écran"),
-        ("Wayland requires Ubuntu 21.04 or higher version.", "Wayland nécessite Ubuntu 21.04 ou une version ultérieure."),
-        ("Wayland requires higher version of linux distro. Please try X11 desktop or change your OS.", "Wayland nécessite une version ultérieure de votre distribution Linux. Veuillez essayer le bureau X11 ou changer de système d’exploitation."),
+        ("ubuntu-21-04-required", "Wayland nécessite Ubuntu 21.04 ou une version ultérieure."),
+        ("wayland-requires-higher-linux-version", "Wayland nécessite une version ultérieure de votre distribution Linux. Veuillez essayer le bureau X11 ou changer de système d’exploitation."),
+        ("xdp-portal-unavailable", "Échec de la capture de l’écran Wayland. Le portail de bureau XDG a peut-être planté ou n’est pas disponible. Essayez de le redémarrer avec la commande `systemctl --user restart xdg-desktop-portal`."),
         ("JumpLink", "Afficher"),
         ("Please Select the screen to be shared(Operate on the peer side).", "Veuillez sélectionner l’écran à partager (côté appareil distant)."),
         ("Show RustDesk", "Afficher RustDesk"),
@@ -739,5 +740,6 @@ pub static ref T: std::collections::HashMap<&'static str, &'static str> =
         ("keep-awake-during-outgoing-sessions-label", "Maintenir l’écran allumé lors des sessions sortantes"),
         ("keep-awake-during-incoming-sessions-label", "Maintenir l’écran allumé lors des sessions entrantes"),
         ("Continue with {}", "Continuer avec {}"),
+        ("Display Name", "Nom d’affichage"),
     ].iter().cloned().collect();
 }
